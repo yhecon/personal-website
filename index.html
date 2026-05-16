@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Personal academic website for Yuhang He, economist." />
+    <title>Yuhang He | Economist</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home">Yuhang He</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#office-hours">Office Hours</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">Economist</p>
+          <h1>Research on applied microeconomics, environment, and public policy.</h1>
+          <p>
+            I am an economist working on questions at the intersection of empirical economics,
+            environmental change, and policy design.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#research">View research</a>
+            <a class="button secondary" href="assets/cv.pdf">Download CV</a>
+          </div>
+        </div>
+        <aside class="profile-card" aria-label="Profile summary">
+          <div class="portrait-placeholder">YH</div>
+          <h2>Yuhang He</h2>
+          <p>Economist</p>
+          <p class="muted">Add affiliation, office, and short bio here.</p>
+        </aside>
+      </section>
+
+      <section class="section" id="research">
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2>Working Papers</h2>
+        </div>
+        <div class="paper-list">
+          <article class="paper-card">
+            <p class="paper-status">Working paper</p>
+            <h3>Paper Title Goes Here</h3>
+            <p>
+              One-sentence abstract or research question. Replace this placeholder with the
+              real project summary.
+            </p>
+            <div class="paper-links">
+              <a href="#">Paper</a>
+              <a href="#">Slides</a>
+              <a href="#">Code/Data</a>
+            </div>
+          </article>
+          <article class="paper-card">
+            <p class="paper-status">Work in progress</p>
+            <h3>Another Research Project</h3>
+            <p>
+              A short description of the project, methods, setting, and contribution.
+            </p>
+            <div class="paper-links">
+              <a href="#">Abstract</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="publications">
+        <div class="section-heading">
+          <p class="eyebrow">Publications</p>
+          <h2>Selected Work</h2>
+        </div>
+        <div class="content-block">
+          <p>
+            Add published articles, accepted papers, policy reports, and selected media mentions
+            here. Keep citations in a consistent format.
+          </p>
+        </div>
+      </section>
+
+      <section class="section split" id="teaching">
+        <div class="section-heading">
+          <p class="eyebrow">Teaching</p>
+          <h2>Courses</h2>
+        </div>
+        <div class="content-block">
+          <ul class="clean-list">
+            <li>Course name, institution, term.</li>
+            <li>Course name, institution, term.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section split" id="office-hours">
+        <div class="section-heading">
+          <p class="eyebrow">Office Hours</p>
+          <h2>Meetings</h2>
+        </div>
+        <div class="content-block">
+          <p>
+            Office hours are available by appointment. Add a booking link here when ready.
+          </p>
+          <a class="button primary" href="mailto:your.email@example.com">Request a meeting</a>
+        </div>
+      </section>
+
+      <section class="section split" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Get in Touch</h2>
+        </div>
+        <div class="content-block contact-grid">
+          <a href="mailto:your.email@example.com">your.email@example.com</a>
+          <a href="https://github.com/yhecon">GitHub</a>
+          <a href="https://scholar.google.com/">Google Scholar</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Yuhang He. Built with GitHub and Netlify.</p>
+    </footer>
+
+    <script>
+      document.querySelector("#year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
