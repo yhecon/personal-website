@@ -113,47 +113,31 @@ p {
   max-width: 720px;
 }
 
-.kicker,
-.subtitle,
 .meta,
 .links,
-footer p,
-.photo-panel p {
+footer p {
   color: var(--muted);
-}
-
-.kicker {
-  margin-bottom: 8px;
-  font-size: 0.86rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.subtitle {
-  margin-bottom: 24px;
-  font-size: 1.05rem;
 }
 
 .photo-panel {
   padding-top: 4px;
 }
 
+.photo-panel img,
 .photo-placeholder {
-  display: grid;
   width: 100%;
   aspect-ratio: 4 / 5;
-  place-items: center;
   border: 1px solid var(--border);
   border-radius: 6px;
-  color: var(--muted);
   background: var(--soft);
-  font-weight: 700;
+  object-fit: cover;
 }
 
-.photo-panel p {
-  margin-top: 10px;
-  font-size: 0.9rem;
+.photo-placeholder {
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-weight: 700;
 }
 
 code {
