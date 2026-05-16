@@ -1,6 +1,6 @@
-# Personal Website
+# Yuhang Pan Personal Website
 
-Academic personal website for Yuhang He.
+Academic personal website for Yuhang Pan.
 
 ## Local Preview
 
@@ -24,7 +24,7 @@ Then visit `http://localhost:8000`.
 
 ## Next Edits
 
-- Replace placeholder bio, affiliation, and email.
+- Replace or refine bio, affiliation, and email if needed.
 - Add `assets/cv.pdf`.
 - Add a profile photo.
-- Replace placeholder research entries with real papers.
+- Add final paper links, Google Scholar link, and office-hour booking link.

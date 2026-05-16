@@ -204,6 +204,16 @@ li {
   margin-bottom: 8px;
 }
 
+.profile-card h2 span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
 .muted {
   color: var(--muted);
 }
@@ -254,9 +264,14 @@ li {
   font-weight: 800;
 }
 
-.clean-list {
+.clean-list,
+.publication-list {
   margin: 0;
   padding-left: 20px;
+}
+
+.publication-list li + li {
+  margin-top: 14px;
 }
 
 .site-footer {
