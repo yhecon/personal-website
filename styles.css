@@ -297,6 +297,10 @@ p {
   background: var(--accent-soft);
 }
 
+.appointment-band {
+  background: var(--surface);
+}
+
 .content-page {
   max-width: 860px;
   padding: 50px 0 34px;
