@@ -13,59 +13,106 @@
       <header class="site-header">
         <a class="site-title" href="index.html"><img src="assets/pku-logo.png" alt="" /> <span class="site-name">Yuhang Pan <span>潘聿航</span></span></a>
         <nav aria-label="Primary navigation">
-          <a href="working-papers.html">Working Papers</a>
+          <a aria-current="page" href="index.html">Home</a>
+          <a href="working-papers.html">Papers</a>
           <a href="publications.html">Publications</a>
+          <a href="group.html">Group</a>
           <a href="teaching.html">Teaching</a>
-          <a href="recruiting.html">Recruiting</a>
-          <a href="zh.html">中文简介</a>
+          <a href="zh.html">中文</a>
         </nav>
       </header>
 
-      <main class="home">
-        <section class="home-copy">
-          <h1>Yuhang Pan</h1>
-          <p>
-            Yuhang Pan is an applied microeconomist. He works as a tenure-track assistant
-            professor at the <a href="https://www.ghd.pku.edu.cn/">Institute for Global Health
-            and Development (iGHD)</a> at <a href="https://www.pku.edu.cn/">Peking University
-            (PKU)</a>. His research lies at the intersection of environmental economics,
-            health economics, and development economics.
-          </p>
-          <p>
-            His current research interests include the effective design of environmental
-            regulatory policies, the health consequences of public policies, particularly
-            environmental policies, and physician incentives in healthcare systems. Some of his
-            work also intersects with topics in artificial intelligence and behavioral economics.
-          </p>
-          <p>
-            He has published in leading journals across disciplines, including <em>Science</em>,
-            <em>Nature Sustainability</em>, and the <em>Journal of Environmental Economics and
-            Management</em>.
-          </p>
-          <p>
-            Yuhang received his Ph.D. in the Environmental Economics Track from the Hong Kong
-            University of Science and Technology and completed his postdoctoral training at the
-            Faculty of Business and Economics at the University of Hong Kong. He holds a
-            bachelor's degree in environmental science from Beijing Normal University.
-          </p>
-          <p>
-            At Peking University, he is also a faculty member at the Institute of Carbon
-            Neutrality and the Yenching Academy. At PKU-iGHD, he serves as the executive director
-            of the PKU-Yale Summer Camp on Health Economics and the postgraduate program
-            coordinator.
-          </p>
-          <dl class="contact-list compact-contact">
-            <dt>Email</dt>
-            <dd><a href="mailto:yhpan@pku.edu.cn">yhpan@pku.edu.cn</a></dd>
-            <dt>Address</dt>
-            <dd>Institute for Global Health and Development, Peking University, 5 Yiheyuan Road, Haidian District, Beijing 100871, China</dd>
-          </dl>
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Applied microeconomist</p>
+            <h1>Yuhang Pan</h1>
+            <p class="lede">
+              I study environmental regulation, health policy, and development using applied
+              microeconomic methods.
+            </p>
+            <p>
+              I am a tenure-track assistant professor at the
+              <a href="https://www.ghd.pku.edu.cn/">Institute for Global Health and Development</a>
+              at <a href="https://www.pku.edu.cn/">Peking University</a>. My research examines how
+              public policies shape environmental quality, health, and incentives in health care
+              systems.
+            </p>
+            <div class="hero-actions" aria-label="Key links">
+              <a class="button primary" href="working-papers.html">Research papers</a>
+              <a class="button" href="group.html">Join the group</a>
+              <a class="button" href="mailto:yhpan@pku.edu.cn">Email</a>
+            </div>
+          </div>
+
+          <aside class="profile-card" aria-label="Profile">
+            <img src="assets/profile.jpg" alt="Yuhang Pan" onerror="this.hidden = true; this.nextElementSibling.hidden = false;" />
+            <div class="photo-placeholder" hidden>Photo</div>
+            <div class="profile-meta">
+              <strong>Assistant Professor</strong>
+              <span>Peking University</span>
+              <span>Environmental economics · Health economics · Development economics</span>
+            </div>
+          </aside>
         </section>
 
-        <aside class="photo-panel" aria-label="Profile photo">
-          <img src="assets/profile.jpg" alt="Yuhang Pan" onerror="this.hidden = true; this.nextElementSibling.hidden = false;" />
-          <div class="photo-placeholder" hidden>Photo</div>
-        </aside>
+        <section class="section-grid" aria-labelledby="featured-work">
+          <div>
+            <p class="section-kicker">Featured Work</p>
+            <h2 id="featured-work">Recent and selected research</h2>
+          </div>
+          <div class="feature-list">
+            <article class="feature-item">
+              <p class="tag">Publication</p>
+              <h3>Reducing Single-Use Cutlery with Green Nudges</h3>
+              <p><em>Science</em>, 2023. With Guojun He, Albert Park, Yasuyuki Sawada, and Elaine S. Tan.</p>
+              <a href="publications.html">View publications</a>
+            </article>
+            <article class="feature-item">
+              <p class="tag">Publication</p>
+              <h3>Air Pollution and the Airborne Diseases: Evidence from China and Japan</h3>
+              <p><em>Journal of Environmental Economics and Management</em>, 2025. With Guojun He and Takanao Tanaka.</p>
+              <a href="publications.html">View publications</a>
+            </article>
+            <article class="feature-item">
+              <p class="tag">Working Paper</p>
+              <h3>Market vs. Planning: Emission Abatement under Incomplete Information and with Local Externalities</h3>
+              <p>With Guojun He and Yang Xie.</p>
+              <a href="working-papers.html">View working papers</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="research-areas" aria-labelledby="research-areas">
+          <p class="section-kicker">Research Areas</p>
+          <h2 id="research-areas">Questions I work on</h2>
+          <div class="area-grid">
+            <article>
+              <h3>Environmental Regulation</h3>
+              <p>How should environmental policies be designed when information, incentives, and local externalities matter?</p>
+            </article>
+            <article>
+              <h3>Health Consequences of Policy</h3>
+              <p>How do environmental and public policies affect mortality, cognition, mental health, and well-being?</p>
+            </article>
+            <article>
+              <h3>Healthcare Incentives</h3>
+              <p>How do physicians, patients, and institutions respond to incentives within health care systems?</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="split-band" aria-labelledby="group-callout">
+          <div>
+            <p class="section-kicker">Group</p>
+            <h2 id="group-callout">Students and research assistants</h2>
+            <p>
+              I work with students and research assistants interested in applied microeconomics,
+              environmental policy, health economics, data work, and causal inference.
+            </p>
+          </div>
+          <a class="button primary" href="group.html">Meet the group</a>
+        </section>
       </main>
 
       <footer>
