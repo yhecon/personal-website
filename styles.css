@@ -344,21 +344,37 @@ footer p {
 
 .member-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
 
 .member-card {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
   padding: 18px;
 }
 
-.avatar-placeholder {
-  width: 100%;
+.member-card h3 {
+  margin-top: 2px;
+}
+
+.member-card img {
+  width: 92px;
   aspect-ratio: 1;
-  margin-bottom: 16px;
+  border: 1px solid var(--border);
+  background: var(--soft);
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  width: 92px;
+  aspect-ratio: 1;
   background: var(--soft);
   border: 1px dashed #c8beb1;
   font-size: 0.88rem;
+  text-align: center;
 }
 
 .placeholder-member {
@@ -450,5 +466,17 @@ footer p {
   .contact-list {
     grid-template-columns: 1fr;
     gap: 2px;
+  }
+}
+
+@media (max-width: 560px) {
+  .member-card {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .member-card img,
+  .avatar-placeholder {
+    width: 72px;
   }
 }
