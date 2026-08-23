@@ -83,10 +83,9 @@ p { max-width: 760px; }
 
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) 285px; gap: clamp(44px, 8vw, 106px); align-items: center; min-height: 640px; padding: 72px 0 80px; }
 .hero-copy { max-width: 770px; animation: rise 700ms ease-out both; }
-.hero h1 { font-size: clamp(2.75rem, 5.5vw, 4.9rem); line-height: 0.94; }
-.hero .eyebrow { display: flex; align-items: center; gap: 10px; }
-.hero .eyebrow::before { width: 28px; height: 1px; background: var(--accent); content: ""; }
 .intro-copy { color: var(--ink-soft); font-size: 1rem; line-height: 1.72; }
+.intro-copy:first-child { font-size: 1.06rem; }
+.intro-copy:first-child strong { color: var(--ink); font-weight: 760; }
 .hero-email { display: flex; gap: 13px; align-items: baseline; margin-top: 25px; color: var(--ink-soft); font-size: 0.92rem; }
 .hero-email span { color: var(--muted); font-size: 0.68rem; font-weight: 760; letter-spacing: 0.14em; text-transform: uppercase; }
 .hero-email a { font-weight: 650; }
@@ -191,7 +190,6 @@ footer p { margin: 0; font-size: 0.8rem; }
 @media (max-width: 680px) {
   .page { width: min(100% - 28px, var(--max-width)); }
   .site-title img { width: 30px; height: 30px; }
-  .hero h1 { font-size: clamp(2.7rem, 14vw, 4.2rem); }
   .hero { padding-top: 54px; }
   .hero-actions { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); }
   .button { padding-inline: 13px; }
