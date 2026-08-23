@@ -142,7 +142,7 @@ p { max-width: 760px; }
 .role-type { margin-bottom: 8px; color: var(--signal); font-size: 0.72rem; font-weight: 760; letter-spacing: 0.09em; text-transform: uppercase; }
 .role-heading h2, .recruitment-contact h2 { margin-bottom: 9px; font-family: Inter, ui-sans-serif, sans-serif; font-size: clamp(1.35rem, 2.5vw, 1.8rem); font-weight: 650; letter-spacing: -0.035em; line-height: 1.15; }
 .role-location { margin: 0; color: var(--muted); font-size: 0.88rem; }
-.role-copy p { max-width: 680px; margin-bottom: 24px; color: var(--ink-soft); }
+.role-copy p { max-width: 680px; margin-bottom: 24px; color: var(--ink-soft); text-align: justify; text-justify: inter-word; hyphens: auto; }
 .role-copy p:last-child { margin-bottom: 0; }
 .role-copy h3 { margin: 27px 0 7px; color: var(--ink); font-size: 0.78rem; font-weight: 760; letter-spacing: 0.075em; text-transform: uppercase; }
 .recruitment-contact { display: grid; grid-template-columns: minmax(210px, 0.72fr) minmax(0, 1.6fr); gap: 8px clamp(32px, 7vw, 88px); margin-top: 42px; padding: 30px; border-radius: var(--radius); background: var(--surface); }
@@ -183,7 +183,8 @@ p { max-width: 760px; }
 .publication-copy .publication-notes { margin-top: 9px; font-size: 0.88rem; }
 .abstract-details { margin-top: 17px; font-size: 0.82rem; font-weight: 720; }
 .abstract-copy { max-width: 760px; margin-top: 14px; padding: 20px 22px; border-left: 3px solid var(--accent); border-radius: 0 12px 12px 0; background: rgba(255,255,255,0.62); }
-.abstract-copy p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; font-weight: 450; line-height: 1.72; }
+.abstract-copy p { margin: 0 0 10px; color: var(--ink-soft); font-size: 0.92rem; font-weight: 450; line-height: 1.72; }
+.abstract-copy p:last-child { margin-bottom: 0; }
 .wide-page { max-width: 100%; }
 .lab-page { max-width: 980px; }
 .lab-page h1 { margin-bottom: 28px; }
