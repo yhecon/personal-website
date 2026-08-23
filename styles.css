@@ -132,6 +132,24 @@ p { max-width: 760px; }
 .content-page > h1 { margin-bottom: 48px; font-size: clamp(3.4rem, 7vw, 6.1rem); }
 .content-page > h1::after { display: block; width: 42px; height: 4px; margin-top: 28px; border-radius: 2px; background: var(--accent); content: ""; }
 .content-page > h2 { margin-top: 58px; font-size: clamp(1.55rem, 3vw, 2.3rem); }
+.recruitment-page { max-width: 1040px; }
+.recruitment-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 0.75fr); column-gap: clamp(42px, 8vw, 100px); align-items: end; margin-bottom: 58px; }
+.recruitment-intro .eyebrow { grid-column: 1 / -1; }
+.recruitment-intro h1 { margin: 0; font-size: clamp(2.35rem, 5vw, 4.35rem); line-height: 1; }
+.recruitment-intro h1 span { color: var(--muted); font-size: 0.58em; font-weight: 480; letter-spacing: -0.025em; white-space: nowrap; }
+.recruitment-lead { margin: 0; color: var(--ink-soft); font-size: 1rem; line-height: 1.75; }
+.recruitment-list { border-top: 1px solid var(--ink); }
+.recruitment-role { display: grid; grid-template-columns: minmax(210px, 0.72fr) minmax(0, 1.6fr); gap: clamp(32px, 7vw, 88px); padding: 42px 0 46px; border-bottom: 1px solid var(--line); }
+.role-type { margin-bottom: 8px; color: var(--signal); font-size: 0.72rem; font-weight: 760; letter-spacing: 0.09em; text-transform: uppercase; }
+.role-heading h2, .recruitment-contact h2 { margin-bottom: 9px; font-family: Inter, ui-sans-serif, sans-serif; font-size: clamp(1.35rem, 2.5vw, 1.8rem); font-weight: 650; letter-spacing: -0.035em; line-height: 1.15; }
+.role-location { margin: 0; color: var(--muted); font-size: 0.88rem; }
+.role-copy p { max-width: 680px; margin-bottom: 24px; color: var(--ink-soft); }
+.role-copy p:last-child { margin-bottom: 0; }
+.role-copy h3 { margin: 27px 0 7px; color: var(--ink); font-size: 0.78rem; font-weight: 760; letter-spacing: 0.075em; text-transform: uppercase; }
+.recruitment-contact { display: grid; grid-template-columns: minmax(210px, 0.72fr) minmax(0, 1.6fr); gap: 8px clamp(32px, 7vw, 88px); margin-top: 42px; padding: 30px; border-radius: var(--radius); background: var(--surface); }
+.recruitment-contact .role-type { grid-column: 1; }
+.recruitment-contact h2 { grid-column: 1; }
+.recruitment-contact > p:last-child { grid-column: 2; grid-row: 1 / span 2; margin: 0; color: var(--ink-soft); }
 .paper-page { max-width: 980px; }
 .paper-list { display: grid; gap: 0; border-top: 1px solid var(--ink); }
 .paper-item { display: grid; grid-template-columns: 42px minmax(0, 1fr); gap: 22px; padding: 32px 0; border-bottom: 1px solid var(--line); }
@@ -217,6 +235,11 @@ footer p { margin: 0; font-size: 0.8rem; }
   .area-grid { grid-template-columns: 1fr; }
   .area-grid article { min-height: 190px; }
   .content-page { padding-top: 56px; }
+  .recruitment-intro { grid-template-columns: 1fr; gap: 24px; margin-bottom: 42px; }
+  .recruitment-intro .eyebrow { grid-column: auto; margin-bottom: -12px; }
+  .recruitment-role { grid-template-columns: 1fr; gap: 24px; padding: 32px 0 36px; }
+  .recruitment-contact { grid-template-columns: 1fr; }
+  .recruitment-contact .role-type, .recruitment-contact h2, .recruitment-contact > p:last-child { grid-column: auto; grid-row: auto; }
   .booking-intro { gap: 28px; padding-bottom: 38px; }
   .calendar-panel { padding: 16px; border-radius: 18px; }
   .calendar-heading { display: grid; }
