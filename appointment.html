@@ -23,20 +23,44 @@
         </nav>
       </header>
 
-      <main class="content-page">
-        <p class="eyebrow">Appointment</p>
-        <h1>Appointment</h1>
-        <p class="lede">
-          This page is reserved for a future appointment system.
-        </p>
-        <p>
-          A dedicated appointment website will be linked here for office hours, student meetings,
-          collaborator meetings, and visitor requests.
-        </p>
-        <p>
-          For now, please contact me by email:
-          <a href="mailto:yhpan@pku.edu.cn">yhpan@pku.edu.cn</a>.
-        </p>
+      <main class="content-page appointment-page">
+        <section class="booking-intro">
+          <div>
+            <p class="eyebrow">Office hours</p>
+            <h1>Schedule a meeting</h1>
+            <p>
+              Students, research assistants, collaborators, and visitors are welcome to book a
+              30-minute conversation. Please select an available time and briefly describe what
+              you would like to discuss.
+            </p>
+          </div>
+          <dl class="booking-details">
+            <div><dt>Duration</dt><dd>30 minutes</dd></div>
+            <div><dt>Hours</dt><dd>Monday–Friday<br />09:00–12:00 · 13:00–17:00</dd></div>
+            <div><dt>Time zone</dt><dd>Asia/Shanghai</dd></div>
+          </dl>
+        </section>
+
+        <section class="calendar-panel" aria-labelledby="booking-calendar-title">
+          <div class="calendar-heading">
+            <div>
+              <p class="section-kicker">Calendar</p>
+              <h2 id="booking-calendar-title">Choose an available time</h2>
+            </div>
+            <a class="button" href="https://cal.com/yhpan/30min">Open booking page</a>
+          </div>
+          <iframe
+            class="booking-frame"
+            src="https://cal.com/yhpan/30min?embed=true&amp;theme=light&amp;layout=month_view"
+            title="Book a 30-minute meeting with Yuhang Pan"
+            loading="lazy"
+            allow="payment"
+          ></iframe>
+          <p class="calendar-fallback">
+            If the calendar does not load, use the
+            <a href="https://cal.com/yhpan/30min">direct booking page</a>.
+          </p>
+        </section>
       </main>
     </div>
   </body>
