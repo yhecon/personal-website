@@ -157,6 +157,7 @@ p { max-width: 760px; }
 .item-list li::marker { color: var(--accent); font-weight: 700; }
 .publication-title, .publication-venue, .publication-authors, .publication-notes { display: block; }
 .publication-title { margin-bottom: 3px; }
+.publication-venue em { color: var(--signal); font-weight: 650; }
 .publication-authors { color: var(--muted); }
 .publication-notes { margin-top: 3px; color: var(--ink-soft); }
 .member-section { margin-top: 54px; padding-top: 35px; border-top: 1px solid var(--line); }
