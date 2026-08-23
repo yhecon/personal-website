@@ -22,6 +22,14 @@ Then visit `http://localhost:8000`.
    - Publish directory: `.`
 5. Add your custom domain in Netlify after the first deploy succeeds.
 
+This repository is already connected to Netlify. For routine updates, commit changes on
+`main` and push them to `origin`; Netlify will publish the repository root automatically.
+
+## Design Archive
+
+The site design immediately before the August 2026 redesign is preserved in the Git branch
+`archive/pre-redesign-2026-08-23`.
+
 ## Next Edits
 
 - Replace or refine bio, affiliation, and email if needed.
