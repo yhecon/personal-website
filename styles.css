@@ -135,7 +135,7 @@ p { max-width: 760px; }
 .recruitment-page { max-width: 1040px; }
 .recruitment-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 0.75fr); column-gap: clamp(42px, 8vw, 100px); align-items: end; margin-bottom: 58px; }
 .recruitment-intro .eyebrow { grid-column: 1 / -1; }
-.recruitment-intro h1 { margin: 0; font-size: clamp(2.35rem, 5vw, 4.35rem); line-height: 1; }
+.recruitment-intro h1 { margin: 0; font-size: clamp(1.9rem, 4vw, 3.4rem); line-height: 1; }
 .recruitment-intro h1 span { color: var(--muted); font-size: 0.58em; font-weight: 480; letter-spacing: -0.025em; white-space: nowrap; }
 .recruitment-lead { margin: 0; color: var(--ink-soft); font-size: 1rem; line-height: 1.75; }
 .recruitment-list { border-top: 1px solid var(--ink); }
