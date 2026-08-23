@@ -103,8 +103,9 @@ p { max-width: 760px; }
 .photo-placeholder, .avatar-placeholder { display: grid; place-items: center; color: var(--muted); font-weight: 700; }
 .photo-placeholder[hidden] { display: none; }
 
-.section-grid { display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: clamp(34px, 5vw, 72px); padding: 72px 0; border-top: 1px solid var(--line); }
+.section-grid { display: grid; grid-template-columns: 235px minmax(0, 1fr); gap: clamp(30px, 4vw, 58px); padding: 72px 0; border-top: 1px solid var(--line); }
 .section-grid .section-kicker { margin-bottom: 5px; }
+.section-grid > div:first-child h2 { max-width: 220px; font-size: clamp(1.55rem, 2.6vw, 2.15rem); line-height: 1.08; letter-spacing: -0.035em; }
 .feature-list { display: grid; border-top: 1px solid var(--ink); counter-reset: work; }
 .feature-item { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 92px; gap: 28px; align-items: center; padding: 24px 34px 24px 0; border-bottom: 1px solid var(--line); counter-increment: work; transition: padding-left 180ms ease; }
 .feature-item::after { position: absolute; top: 27px; right: 110px; color: var(--line-strong); content: "0" counter(work); font: 600 0.68rem/1 Inter, sans-serif; letter-spacing: 0.08em; }
