@@ -137,7 +137,6 @@ p { max-width: 760px; }
 .recruitment-intro .eyebrow { grid-column: 1 / -1; }
 .recruitment-intro h1 { margin: 0; font-size: clamp(1.9rem, 4vw, 3.4rem); line-height: 1; }
 .recruitment-intro h1 span { color: var(--muted); font-size: 0.58em; font-weight: 480; letter-spacing: -0.025em; white-space: nowrap; }
-.recruitment-lead { margin: 0; color: var(--ink-soft); font-size: 1rem; line-height: 1.75; }
 .recruitment-list { border-top: 1px solid var(--ink); }
 .recruitment-role { display: grid; grid-template-columns: minmax(210px, 0.72fr) minmax(0, 1.6fr); gap: clamp(32px, 7vw, 88px); padding: 42px 0 46px; border-bottom: 1px solid var(--line); }
 .role-type { margin-bottom: 8px; color: var(--signal); font-size: 0.72rem; font-weight: 760; letter-spacing: 0.09em; text-transform: uppercase; }
