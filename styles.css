@@ -155,6 +155,10 @@ p { max-width: 760px; }
 .item-list > li { margin-bottom: 25px; padding-left: 6px; }
 .item-list.compact > li { margin-bottom: 17px; }
 .item-list li::marker { color: var(--accent); font-weight: 700; }
+.publication-title, .publication-venue, .publication-authors, .publication-notes { display: block; }
+.publication-title { margin-bottom: 3px; }
+.publication-authors { color: var(--muted); }
+.publication-notes { margin-top: 3px; color: var(--ink-soft); }
 .member-section { margin-top: 54px; padding-top: 35px; border-top: 1px solid var(--line); }
 .member-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; }
 .member-card { display: grid; grid-template-columns: 92px minmax(0,1fr); gap: 17px; padding: 20px; border-radius: var(--radius); }
