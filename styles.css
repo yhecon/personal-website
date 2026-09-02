@@ -162,9 +162,9 @@ p { max-width: 760px; }
 .paper-list { display: grid; gap: 0; border-top: 1px solid var(--ink); }
 .paper-item { padding: 36px 0 38px; border-bottom: 1px solid var(--line); transition: padding-left 180ms ease; }
 .paper-item:hover { padding-left: 10px; }
-.paper-body h2 { max-width: 880px; margin: 11px 0 10px; font-family: Inter, ui-sans-serif, sans-serif; font-size: clamp(1.18rem, 2.1vw, 1.48rem); font-weight: 650; line-height: 1.38; letter-spacing: -0.025em; }
+.paper-body h2 { max-width: 880px; margin: 0 0 9px; font-family: Inter, ui-sans-serif, sans-serif; font-size: clamp(1.18rem, 2.1vw, 1.48rem); font-weight: 650; line-height: 1.38; letter-spacing: -0.025em; }
 .paper-body p { margin-bottom: 8px; color: var(--ink-soft); }
-.paper-status { display: inline-flex; padding: 3px 9px; border: 1px solid rgba(33,104,105,0.25); border-radius: 999px; background: rgba(33,104,105,0.07); color: var(--signal) !important; font-size: 0.72rem; font-weight: 750; }
+.paper-status { color: var(--signal) !important; font-size: 0.86rem; font-weight: 650; }
 .paper-actions { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: flex-start; margin-top: 18px; font-size: 0.82rem; font-weight: 700; }
 .paper-actions > a::after { margin-left: 6px; content: "↗"; }
 .compact-details summary, .abstract-details summary { color: var(--accent); cursor: pointer; list-style: none; }
