@@ -145,6 +145,11 @@ p { max-width: 760px; }
 .role-copy p { max-width: 680px; margin-bottom: 24px; color: var(--ink-soft); text-align: justify; text-justify: inter-word; hyphens: auto; }
 .role-copy p:last-child { margin-bottom: 0; }
 .role-copy h3 { margin: 27px 0 7px; color: var(--ink); font-size: 0.78rem; font-weight: 760; letter-spacing: 0.075em; text-transform: uppercase; }
+.program-details { margin: 26px 0 30px; border: 1px solid var(--line); border-radius: 12px; background: rgba(255,255,255,0.52); }
+.program-details summary { padding: 15px 18px; color: var(--accent); cursor: pointer; font-size: 0.86rem; font-weight: 720; list-style-position: inside; }
+.program-details div { padding: 0 18px 18px; }
+.program-details div p { margin: 0 0 14px; font-size: 0.9rem; }
+.program-details div p:last-child { margin-bottom: 0; }
 .recruitment-contact { display: grid; grid-template-columns: minmax(210px, 0.72fr) minmax(0, 1.6fr); gap: 8px clamp(32px, 7vw, 88px); margin-top: 42px; padding: 30px; border-radius: var(--radius); background: var(--surface); }
 .recruitment-contact .role-type { grid-column: 1; }
 .recruitment-contact h2 { grid-column: 1; }
@@ -180,6 +185,8 @@ p { max-width: 760px; }
 .publication-copy h3 a:hover { color: var(--accent); }
 .publication-copy p { margin-bottom: 6px; }
 .publication-copy .publication-authors { color: var(--muted); font-size: 0.9rem; }
+.coauthors a, .publication-authors a { color: inherit; text-decoration: underline; text-decoration-color: rgba(139, 21, 34, 0.45); text-decoration-thickness: 1px; }
+.coauthors a:hover, .publication-authors a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .publication-copy .publication-notes { margin-top: 9px; font-size: 0.88rem; }
 .abstract-details { margin-top: 17px; font-size: 0.82rem; font-weight: 720; }
 .abstract-copy { max-width: 760px; margin-top: 14px; padding: 20px 22px; border-left: 3px solid var(--accent); border-radius: 0 12px 12px 0; background: rgba(255,255,255,0.62); }
