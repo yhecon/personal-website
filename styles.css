@@ -286,6 +286,20 @@ p { max-width: 760px; }
 .form-submit-row { display: flex; justify-content: space-between; gap: 24px; align-items: center; padding-top: 22px; border-top: 1px solid var(--line); }
 .privacy-note { margin: 0; color: var(--muted); font-size: 0.76rem; line-height: 1.5; }
 .participation-form button { border: 0; cursor: pointer; white-space: nowrap; }
+.scenario-block { display: grid; gap: 12px; padding: 24px; border: 1px solid var(--line); border-radius: 16px; background: rgba(247,248,250,0.68); }
+.scenario-block .scenario-number { margin: 0; color: var(--signal); font-size: 0.68rem; font-weight: 760; letter-spacing: 0.14em; text-transform: uppercase; }
+.scenario-block h2 { margin: 0; font-family: Inter, ui-sans-serif, sans-serif; font-size: 1.12rem; font-weight: 720; letter-spacing: -0.015em; }
+.scenario-block h2 span { display: block; margin-top: 3px; color: var(--muted); font-size: 0.78rem; font-weight: 560; letter-spacing: 0; }
+.scenario-block > p:not(.scenario-number) { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
+.amount-field { max-width: 260px; margin-top: 4px; }
+.amount-input { position: relative; display: block; }
+.amount-input b { position: absolute; z-index: 1; top: 50%; left: 14px; color: var(--muted); font-weight: 650; transform: translateY(-50%); }
+.amount-input input { padding-left: 34px; }
+.kt-question { padding: 25px; border: 1px solid var(--line); border-radius: 16px; background: rgba(247,248,250,0.68); }
+.kt-question legend { width: 100%; margin-bottom: 18px; }
+.kt-question legend > span { display: block; margin-bottom: 8px; color: var(--signal); font-size: 0.68rem; font-weight: 760; letter-spacing: 0.14em; text-transform: uppercase; }
+.kt-question legend em { margin-top: 6px; }
+.kt-question .choice-options strong { display: block; margin-bottom: 5px; color: var(--accent); font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; }
 .submission-page { display: grid; place-items: center; min-height: calc(100vh - 140px); }
 .submission-card { width: min(100%, 680px); padding: clamp(32px, 7vw, 66px); border: 1px solid var(--line); border-radius: 24px; background: var(--surface); box-shadow: var(--shadow); text-align: center; }
 .submission-card h1 { margin-bottom: 20px; font-size: clamp(3rem, 7vw, 5.3rem); }

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Class participation exercise about social preferences and charitable giving." />
+    <title>Social Preferences | Yuhang Pan</title>
+    <link rel="icon" href="assets/pku-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <a class="site-title" href="index.html"><img src="assets/pku-logo.png" alt="" /> <span class="site-name">Yuhang Pan (潘聿航)</span></a>
+        <nav aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="working-papers.html">Working Paper</a>
+          <a href="publications.html">Publication</a>
+          <a aria-current="page" href="research-demos.html">Research Demos</a>
+          <a href="events.html">Events Archive</a>
+          <a href="recruiting.html">Recruitment</a>
+          <a href="appointment.html">Appointment</a>
+          <a href="teaching.html">Teaching</a>
+          <a href="zh.html">中文简介</a>
+        </nav>
+      </header>
+
+      <main class="content-page participation-page">
+        <header class="participation-intro">
+          <p class="eyebrow">Behavioral Economics · Class Participation</p>
+          <h1>Social Preferences</h1>
+          <p>
+            假设你有机会向一个公益项目捐款，每种情境下均可捐赠 0–100 元。请分别填写在以下三种信息公开方式下，你愿意捐赠的金额。
+          </p>
+        </header>
+
+        <form
+          class="participation-form"
+          name="social-preferences-exercise"
+          method="POST"
+          action="/research-demo-thanks.html"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="social-preferences-exercise" />
+          <p class="form-honeypot" aria-hidden="true">
+            <label>Do not fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+          </p>
+
+          <div class="form-grid two-columns">
+            <label class="field">
+              <span>Name <em>姓名</em></span>
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label class="field">
+              <span>Student ID <em>学号</em></span>
+              <input type="text" name="student_id" inputmode="numeric" autocomplete="off" required />
+            </label>
+          </div>
+
+          <div class="scenario-block">
+            <p class="scenario-number">Scenario 1 · 情境一</p>
+            <h2>完全匿名 <span>No one will know</span></h2>
+            <p>没有人会知道你是否捐赠，也不会知道你的捐赠金额。</p>
+            <label class="field amount-field">
+              <span>Donation amount <em>捐赠金额（0–100 元）</em></span>
+              <span class="amount-input"><b>¥</b><input type="number" name="donation_anonymous" min="0" max="100" step="1" inputmode="numeric" required /></span>
+            </label>
+          </div>
+
+          <div class="scenario-block">
+            <p class="scenario-number">Scenario 2 · 情境二</p>
+            <h2>公开捐赠者姓名 <span>Donors' names will be listed</span></h2>
+            <p>如果你捐赠，你的姓名会被列出，但捐赠金额不会公开；如果不捐赠，则不会列出姓名。</p>
+            <label class="field amount-field">
+              <span>Donation amount <em>捐赠金额（0–100 元）</em></span>
+              <span class="amount-input"><b>¥</b><input type="number" name="donation_name_public" min="0" max="100" step="1" inputmode="numeric" required /></span>
+            </label>
+          </div>
+
+          <div class="scenario-block">
+            <p class="scenario-number">Scenario 3 · 情境三</p>
+            <h2>公开姓名和金额 <span>Names and amounts will be listed</span></h2>
+            <p>如果你捐赠，你的姓名和捐赠金额都会被列出；如果不捐赠，则不会列出姓名。</p>
+            <label class="field amount-field">
+              <span>Donation amount <em>捐赠金额（0–100 元）</em></span>
+              <span class="amount-input"><b>¥</b><input type="number" name="donation_name_amount_public" min="0" max="100" step="1" inputmode="numeric" required /></span>
+            </label>
+          </div>
+
+          <div class="form-submit-row">
+            <p class="privacy-note">Your name and student ID are collected only for class participation. 请勿填写其他敏感个人信息。</p>
+            <button class="button primary" type="submit">Submit response</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

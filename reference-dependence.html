@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Class participation exercise about reference dependence and loss aversion." />
+    <title>Reference Dependence | Yuhang Pan</title>
+    <link rel="icon" href="assets/pku-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <a class="site-title" href="index.html"><img src="assets/pku-logo.png" alt="" /> <span class="site-name">Yuhang Pan (潘聿航)</span></a>
+        <nav aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="working-papers.html">Working Paper</a>
+          <a href="publications.html">Publication</a>
+          <a aria-current="page" href="research-demos.html">Research Demos</a>
+          <a href="events.html">Events Archive</a>
+          <a href="recruiting.html">Recruitment</a>
+          <a href="appointment.html">Appointment</a>
+          <a href="teaching.html">Teaching</a>
+          <a href="zh.html">中文简介</a>
+        </nav>
+      </header>
+
+      <main class="content-page participation-page">
+        <header class="participation-intro">
+          <p class="eyebrow">Behavioral Economics · Class Participation</p>
+          <h1>Reference Dependence</h1>
+          <p>
+            下面是两道相互独立的选择题。除题目中说明的金额外，你原本拥有的财富保持不变。每道题请选择你更偏好的选项。
+          </p>
+        </header>
+
+        <form
+          class="participation-form"
+          name="reference-dependence-exercise"
+          method="POST"
+          action="/research-demo-thanks.html"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="reference-dependence-exercise" />
+          <p class="form-honeypot" aria-hidden="true">
+            <label>Do not fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+          </p>
+
+          <div class="form-grid two-columns">
+            <label class="field">
+              <span>Name <em>姓名</em></span>
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label class="field">
+              <span>Student ID <em>学号</em></span>
+              <input type="text" name="student_id" inputmode="numeric" autocomplete="off" required />
+            </label>
+          </div>
+
+          <fieldset class="choice-fieldset kt-question">
+            <legend>
+              <span>Question 1 · 收益情境</span>
+              假设在你现有财富之外，先额外给你 1,000 元。接下来，你会选择哪一个选项？
+              <em>In addition to whatever you own, you have been given ¥1,000. Choose one option.</em>
+            </legend>
+            <div class="choice-options">
+              <label><input type="radio" name="gain_choice" value="A - Sure gain of 500" required /> <span><strong>Option A</strong>确定再获得 500 元<em>A sure gain of ¥500</em></span></label>
+              <label><input type="radio" name="gain_choice" value="B - 50% gain 1000, 50% gain 0" /> <span><strong>Option B</strong>50% 概率再获得 1,000 元，50% 概率不再获得任何金额<em>50% chance to gain ¥1,000 and 50% chance to gain ¥0</em></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="choice-fieldset kt-question">
+            <legend>
+              <span>Question 2 · 损失情境</span>
+              假设在你现有财富之外，先额外给你 2,000 元。接下来，你会选择哪一个选项？
+              <em>In addition to whatever you own, you have been given ¥2,000. Choose one option.</em>
+            </legend>
+            <div class="choice-options">
+              <label><input type="radio" name="loss_choice" value="A - Sure loss of 500" required /> <span><strong>Option A</strong>确定损失 500 元<em>A sure loss of ¥500</em></span></label>
+              <label><input type="radio" name="loss_choice" value="B - 50% loss 1000, 50% loss 0" /> <span><strong>Option B</strong>50% 概率损失 1,000 元，50% 概率不损失任何金额<em>50% chance to lose ¥1,000 and 50% chance to lose ¥0</em></span></label>
+            </div>
+          </fieldset>
+
+          <div class="form-submit-row">
+            <p class="privacy-note">Your name and student ID are collected only for class participation. 请勿填写其他敏感个人信息。</p>
+            <button class="button primary" type="submit">Submit response</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
