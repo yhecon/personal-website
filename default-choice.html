@@ -30,10 +30,12 @@
           <p class="eyebrow">Behavioral Economics · Class Participation</p>
           <h1>Default Choice Exercise</h1>
           <p>
-            请从日常生活中选一个“默认选项”（如果你不主动改变，系统会替你选择的选项），并回答下面的问题。
-            所有题目均为必填，提交后答案会发送至课程教师的 Netlify 后台。
+            Choose one default from everyday life—an option selected for you if you do not actively
+            change it—and answer the questions below. All questions are required.
           </p>
         </header>
+
+        <img class="participation-visual" src="assets/demo-default-choice.jpg" alt="A student comparing a preset option with an active alternative" />
 
         <form
           class="participation-form"
@@ -50,54 +52,54 @@
 
           <div class="form-grid two-columns">
             <label class="field">
-              <span>Name <em>姓名</em></span>
+              <span>Name</span>
               <input type="text" name="name" autocomplete="name" required />
             </label>
             <label class="field">
-              <span>Student ID <em>学号</em></span>
+              <span>Student ID</span>
               <input type="text" name="student_id" inputmode="numeric" autocomplete="off" required />
             </label>
           </div>
 
           <label class="field">
-            <span>A default choice in everyday life <em>生活中的一个默认选择</em></span>
-            <textarea name="default_choice_context" rows="4" placeholder="例如：安装软件时默认勾选接收营销邮件。" required></textarea>
+            <span>A default choice in everyday life</span>
+            <textarea name="default_choice_context" rows="4" placeholder="Example: A software installer preselects receiving marketing emails." required></textarea>
           </label>
 
           <div class="form-grid two-columns">
             <label class="field">
-              <span>What is the default? <em>默认选项是什么？</em></span>
+              <span>What is the default?</span>
               <textarea name="default_option" rows="4" required></textarea>
             </label>
             <label class="field">
-              <span>What is the alternative? <em>替代选项是什么？</em></span>
+              <span>What is the alternative?</span>
               <textarea name="alternative_option" rows="4" required></textarea>
             </label>
           </div>
 
           <fieldset class="choice-fieldset">
-            <legend>Is this default generally good or bad? <em>这个默认选项一般来说是好还是坏？</em></legend>
+            <legend>Is this default generally good or bad?</legend>
             <div class="choice-options">
-              <label><input type="radio" name="default_quality" value="Generally good" required /> <span>Generally good <em>通常是好的</em></span></label>
-              <label><input type="radio" name="default_quality" value="Generally bad" /> <span>Generally bad <em>通常是不好的</em></span></label>
-              <label><input type="radio" name="default_quality" value="It depends" /> <span>It depends <em>视情况而定</em></span></label>
-              <label><input type="radio" name="default_quality" value="Unsure" /> <span>Unsure <em>不确定</em></span></label>
+              <label><input type="radio" name="default_quality" value="Generally good" required /> <span>Generally good</span></label>
+              <label><input type="radio" name="default_quality" value="Generally bad" /> <span>Generally bad</span></label>
+              <label><input type="radio" name="default_quality" value="It depends" /> <span>It depends</span></label>
+              <label><input type="radio" name="default_quality" value="Unsure" /> <span>Unsure</span></label>
             </div>
           </fieldset>
 
           <fieldset class="choice-fieldset">
-            <legend>How much does the default affect your choice? <em>你觉得自己做选择时受到这个默认选项的影响有多大？</em></legend>
+            <legend>How much does the default affect your choice?</legend>
             <div class="influence-scale" role="radiogroup" aria-label="Influence of the default, from very small to very large">
-              <label><input type="radio" name="default_influence" value="1 - Very small" required /><span><strong>1</strong>Very small<br /><em>非常小</em></span></label>
-              <label><input type="radio" name="default_influence" value="2 - Small" /><span><strong>2</strong>Small<br /><em>较小</em></span></label>
-              <label><input type="radio" name="default_influence" value="3 - Moderate" /><span><strong>3</strong>Moderate<br /><em>中等</em></span></label>
-              <label><input type="radio" name="default_influence" value="4 - Large" /><span><strong>4</strong>Large<br /><em>较大</em></span></label>
-              <label><input type="radio" name="default_influence" value="5 - Very large" /><span><strong>5</strong>Very large<br /><em>非常大</em></span></label>
+              <label><input type="radio" name="default_influence" value="1 - Very small" required /><span><strong>1</strong>Very small</span></label>
+              <label><input type="radio" name="default_influence" value="2 - Small" /><span><strong>2</strong>Small</span></label>
+              <label><input type="radio" name="default_influence" value="3 - Moderate" /><span><strong>3</strong>Moderate</span></label>
+              <label><input type="radio" name="default_influence" value="4 - Large" /><span><strong>4</strong>Large</span></label>
+              <label><input type="radio" name="default_influence" value="5 - Very large" /><span><strong>5</strong>Very large</span></label>
             </div>
           </fieldset>
 
           <div class="form-submit-row">
-            <p class="privacy-note">Your name and student ID are collected only for class participation. 请勿填写其他敏感个人信息。</p>
+            <p class="privacy-note">Your name and student ID are collected only for class participation. Please do not enter other sensitive personal information.</p>
             <button class="button primary" type="submit">Submit response</button>
           </div>
         </form>

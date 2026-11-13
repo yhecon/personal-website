@@ -30,9 +30,12 @@
           <p class="eyebrow">Behavioral Economics · Class Participation</p>
           <h1>Social Preferences</h1>
           <p>
-            假设你有机会向一个公益项目捐款，每种情境下均可捐赠 0–100 元。请分别填写在以下三种信息公开方式下，你愿意捐赠的金额。
+            Imagine that you can donate between ¥0 and ¥100 to a charitable project. Enter how much
+            you would donate under each of the three disclosure settings below.
           </p>
         </header>
+
+        <img class="participation-visual" src="assets/demo-social-preferences.jpg" alt="A student donating under anonymous and publicly recognized settings" />
 
         <form
           class="participation-form"
@@ -49,47 +52,47 @@
 
           <div class="form-grid two-columns">
             <label class="field">
-              <span>Name <em>姓名</em></span>
+              <span>Name</span>
               <input type="text" name="name" autocomplete="name" required />
             </label>
             <label class="field">
-              <span>Student ID <em>学号</em></span>
+              <span>Student ID</span>
               <input type="text" name="student_id" inputmode="numeric" autocomplete="off" required />
             </label>
           </div>
 
           <div class="scenario-block">
-            <p class="scenario-number">Scenario 1 · 情境一</p>
-            <h2>完全匿名 <span>No one will know</span></h2>
-            <p>没有人会知道你是否捐赠，也不会知道你的捐赠金额。</p>
+            <p class="scenario-number">Scenario 1</p>
+            <h2>Completely anonymous</h2>
+            <p>No one will know whether you donated or how much you donated.</p>
             <label class="field amount-field">
-              <span>Donation amount <em>捐赠金额（0–100 元）</em></span>
+              <span>Donation amount (¥0–¥100)</span>
               <span class="amount-input"><b>¥</b><input type="number" name="donation_anonymous" min="0" max="100" step="1" inputmode="numeric" required /></span>
             </label>
           </div>
 
           <div class="scenario-block">
-            <p class="scenario-number">Scenario 2 · 情境二</p>
-            <h2>公开捐赠者姓名 <span>Donors' names will be listed</span></h2>
-            <p>如果你捐赠，你的姓名会被列出，但捐赠金额不会公开；如果不捐赠，则不会列出姓名。</p>
+            <p class="scenario-number">Scenario 2</p>
+            <h2>Donors' names will be listed</h2>
+            <p>If you donate, your name will be listed, but the amount will not be disclosed. If you do not donate, your name will not be listed.</p>
             <label class="field amount-field">
-              <span>Donation amount <em>捐赠金额（0–100 元）</em></span>
+              <span>Donation amount (¥0–¥100)</span>
               <span class="amount-input"><b>¥</b><input type="number" name="donation_name_public" min="0" max="100" step="1" inputmode="numeric" required /></span>
             </label>
           </div>
 
           <div class="scenario-block">
-            <p class="scenario-number">Scenario 3 · 情境三</p>
-            <h2>公开姓名和金额 <span>Names and amounts will be listed</span></h2>
-            <p>如果你捐赠，你的姓名和捐赠金额都会被列出；如果不捐赠，则不会列出姓名。</p>
+            <p class="scenario-number">Scenario 3</p>
+            <h2>Names and amounts will be listed</h2>
+            <p>If you donate, both your name and donation amount will be listed. If you do not donate, your name will not be listed.</p>
             <label class="field amount-field">
-              <span>Donation amount <em>捐赠金额（0–100 元）</em></span>
+              <span>Donation amount (¥0–¥100)</span>
               <span class="amount-input"><b>¥</b><input type="number" name="donation_name_amount_public" min="0" max="100" step="1" inputmode="numeric" required /></span>
             </label>
           </div>
 
           <div class="form-submit-row">
-            <p class="privacy-note">Your name and student ID are collected only for class participation. 请勿填写其他敏感个人信息。</p>
+            <p class="privacy-note">Your name and student ID are collected only for class participation. Please do not enter other sensitive personal information.</p>
             <button class="button primary" type="submit">Submit response</button>
           </div>
         </form>
