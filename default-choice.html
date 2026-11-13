@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Class participation exercise about defaults and choice architecture." />
+    <title>Default Choice Exercise | Yuhang Pan</title>
+    <link rel="icon" href="assets/pku-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <a class="site-title" href="index.html"><img src="assets/pku-logo.png" alt="" /> <span class="site-name">Yuhang Pan (潘聿航)</span></a>
+        <nav aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="working-papers.html">Working Paper</a>
+          <a href="publications.html">Publication</a>
+          <a aria-current="page" href="research-demos.html">Research Demos</a>
+          <a href="events.html">Events Archive</a>
+          <a href="recruiting.html">Recruitment</a>
+          <a href="appointment.html">Appointment</a>
+          <a href="teaching.html">Teaching</a>
+          <a href="zh.html">中文简介</a>
+        </nav>
+      </header>
+
+      <main class="content-page participation-page">
+        <header class="participation-intro">
+          <p class="eyebrow">Behavioral Economics · Class Participation</p>
+          <h1>Default Choice Exercise</h1>
+          <p>
+            请从日常生活中选一个“默认选项”（如果你不主动改变，系统会替你选择的选项），并回答下面的问题。
+            所有题目均为必填，提交后答案会发送至课程教师的 Netlify 后台。
+          </p>
+        </header>
+
+        <form
+          class="participation-form"
+          name="default-choice-exercise"
+          method="POST"
+          action="/default-choice-thanks.html"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="default-choice-exercise" />
+          <p class="form-honeypot" aria-hidden="true">
+            <label>Do not fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+          </p>
+
+          <div class="form-grid two-columns">
+            <label class="field">
+              <span>Name <em>姓名</em></span>
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label class="field">
+              <span>Student ID <em>学号</em></span>
+              <input type="text" name="student_id" inputmode="numeric" autocomplete="off" required />
+            </label>
+          </div>
+
+          <label class="field">
+            <span>A default choice in everyday life <em>生活中的一个默认选择</em></span>
+            <textarea name="default_choice_context" rows="4" placeholder="例如：安装软件时默认勾选接收营销邮件。" required></textarea>
+          </label>
+
+          <div class="form-grid two-columns">
+            <label class="field">
+              <span>What is the default? <em>默认选项是什么？</em></span>
+              <textarea name="default_option" rows="4" required></textarea>
+            </label>
+            <label class="field">
+              <span>What is the alternative? <em>替代选项是什么？</em></span>
+              <textarea name="alternative_option" rows="4" required></textarea>
+            </label>
+          </div>
+
+          <fieldset class="choice-fieldset">
+            <legend>Is this default generally good or bad? <em>这个默认选项一般来说是好还是坏？</em></legend>
+            <div class="choice-options">
+              <label><input type="radio" name="default_quality" value="Generally good" required /> <span>Generally good <em>通常是好的</em></span></label>
+              <label><input type="radio" name="default_quality" value="Generally bad" /> <span>Generally bad <em>通常是不好的</em></span></label>
+              <label><input type="radio" name="default_quality" value="It depends" /> <span>It depends <em>视情况而定</em></span></label>
+              <label><input type="radio" name="default_quality" value="Unsure" /> <span>Unsure <em>不确定</em></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="choice-fieldset">
+            <legend>How much does the default affect your choice? <em>你觉得自己做选择时受到这个默认选项的影响有多大？</em></legend>
+            <div class="influence-scale" role="radiogroup" aria-label="Influence of the default, from very small to very large">
+              <label><input type="radio" name="default_influence" value="1 - Very small" required /><span><strong>1</strong>Very small<br /><em>非常小</em></span></label>
+              <label><input type="radio" name="default_influence" value="2 - Small" /><span><strong>2</strong>Small<br /><em>较小</em></span></label>
+              <label><input type="radio" name="default_influence" value="3 - Moderate" /><span><strong>3</strong>Moderate<br /><em>中等</em></span></label>
+              <label><input type="radio" name="default_influence" value="4 - Large" /><span><strong>4</strong>Large<br /><em>较大</em></span></label>
+              <label><input type="radio" name="default_influence" value="5 - Very large" /><span><strong>5</strong>Very large<br /><em>非常大</em></span></label>
+            </div>
+          </fieldset>
+
+          <div class="form-submit-row">
+            <p class="privacy-note">Your name and student ID are collected only for class participation. 请勿填写其他敏感个人信息。</p>
+            <button class="button primary" type="submit">Submit response</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
