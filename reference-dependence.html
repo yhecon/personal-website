@@ -25,7 +25,8 @@
         </nav>
       </header>
 
-      <main class="content-page participation-page">
+      <main class="content-page participation-page reference-dependence-page">
+        <div class="participation-overview">
         <header class="participation-intro">
           <p class="eyebrow">Behavioral Economics · Class Participation</p>
           <h1>Reference Dependence</h1>
@@ -36,6 +37,7 @@
         </header>
 
         <img class="participation-visual" src="assets/demo-reference-dependence.jpg" alt="A student weighing gains and losses around a reference point" />
+        </div>
 
         <form
           class="participation-form"
@@ -66,9 +68,10 @@
               <span>Question 1 · Gain frame</span>
               In addition to whatever you already own, you have been given ¥1,000. Which option do you prefer?
             </legend>
+            <img class="kt-illustration" src="assets/kt-gain.png" alt="Option A: a 50 percent chance to gain ¥1,000 and a 50 percent chance to gain nothing; Option B: a sure gain of ¥500" />
             <div class="choice-options">
-              <label><input type="radio" name="gain_choice" value="A - Sure gain of 500" required /> <span><strong>Option A</strong>A sure gain of ¥500</span></label>
-              <label><input type="radio" name="gain_choice" value="B - 50% gain 1000, 50% gain 0" /> <span><strong>Option B</strong>A 50% chance to gain ¥1,000 and a 50% chance to gain nothing</span></label>
+              <label><input type="radio" name="gain_choice" value="A - 50% gain 1000, 50% gain 0" required /> <span><strong>Option A</strong>A 50% chance to gain ¥1,000 and a 50% chance to gain nothing</span></label>
+              <label><input type="radio" name="gain_choice" value="B - Sure gain of 500" /> <span><strong>Option B</strong>A sure gain of ¥500</span></label>
             </div>
           </fieldset>
 
@@ -77,9 +80,10 @@
               <span>Question 2 · Loss frame</span>
               In addition to whatever you already own, you have been given ¥2,000. Which option do you prefer?
             </legend>
+            <img class="kt-illustration" src="assets/kt-loss.png" alt="Option A: a 50 percent chance to lose ¥1,000 and a 50 percent chance to lose nothing; Option B: a sure loss of ¥500" />
             <div class="choice-options">
-              <label><input type="radio" name="loss_choice" value="A - Sure loss of 500" required /> <span><strong>Option A</strong>A sure loss of ¥500</span></label>
-              <label><input type="radio" name="loss_choice" value="B - 50% loss 1000, 50% loss 0" /> <span><strong>Option B</strong>A 50% chance to lose ¥1,000 and a 50% chance to lose nothing</span></label>
+              <label><input type="radio" name="loss_choice" value="A - 50% loss 1000, 50% loss 0" required /> <span><strong>Option A</strong>A 50% chance to lose ¥1,000 and a 50% chance to lose nothing</span></label>
+              <label><input type="radio" name="loss_choice" value="B - Sure loss of 500" /> <span><strong>Option B</strong>A sure loss of ¥500</span></label>
             </div>
           </fieldset>
 
